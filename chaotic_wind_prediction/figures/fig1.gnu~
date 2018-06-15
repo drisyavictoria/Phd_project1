@@ -1,0 +1,9 @@
+set terminal postscript eps enhanced  20
+!rm 'fig1.eps'
+set output 'fig1.eps'
+set border lw 3
+set format y "%0.1f"
+set xlabel "Time"
+set ylabel "Wind Speed"
+unset key
+p[1:4000]  './wind' w lp
